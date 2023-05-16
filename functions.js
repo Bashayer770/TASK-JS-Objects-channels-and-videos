@@ -44,7 +44,7 @@ function numberOfVideos(channel) {
 function channelHasVideo(videoTitle, channel) {
   // Your code here
 
-  const hasvideo = channel.videos.find((x) => x.title == videoTitle);
+  const hasvideo = channel.videos.some((x) => x.title == videoTitle);
   return hasvideo;
   // console.log(hasvideo)
 }
